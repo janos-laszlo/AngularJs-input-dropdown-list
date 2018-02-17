@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="inputDropdownListDirective/style.css">
+</head>
+
+<body>
+    <div ng-app="myApp" , ng-controller="myAppCtrl">
+        <div style="position:relative; width: 400px;">
+            <input-dropdown-list options-array="persons" bound-variable="person" on-text-changed="textChanged()" on-option-selected="optionSelected()"></input-dropdown-list>
+            <p>{{person}}</p>
+        </div>
+
+        <div style="position:relative; width: 200px;">
+            <input-dropdown-list options-array="people" bound-variable="personObj" property-name="name"></input-dropdown-list>
+            <p>{{personObj}}</p>
+        </div>
+    </div>
+
+    <!-- AngularJs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-animate.min.js"></script>
+
+    <!-- My app -->
+    <script src="app.js"></script>
+
+    <!-- input-dropdown-list directive -->
+    <script src="inputDropdownListDirective/inputDropdownListDirective.js"></script>
+</body>
+
+</html>
