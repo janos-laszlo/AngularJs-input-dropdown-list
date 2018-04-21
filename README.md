@@ -1,5 +1,5 @@
 # AngularJs-input-dropdown-list
-<h3>The purpose of this directive is to have a drop-down list that can be filtered by writing text into an input field.</h4>
+<h3>The purpose of this directive is to have a drop-down list that can be filtered by writing text into it.</h4>
 
 <h4>It requires only AngularJs and the files in "inputDropdownListDirective" folder to be included in your page.</h4>
 <h4>For an example of usage download the repository and open "index.html" on a server.</h4>
