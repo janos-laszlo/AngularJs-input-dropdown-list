@@ -1,7 +1,7 @@
 <div class="input-dropdown-list-container">
     <input class="input-dropdown-list-textbox" maxlength="200" ng-model="model.boundVariable" ng-change="textChanged()" ng-keydown="keydown($event)" ng-focus="model.isHidden = false; justNow = true" ng-click="model.isHidden = !justNow && !model.isHidden; justNow = false" ng-blur="model.isHidden = true;" />
     <div class="input-dropdown-list-button">
-        <i class="input-dropdown-list-down-arrow"></i>
+        <i class="input-dropdown-list-down-arrow" ng-class="model.isHidden ? 'input-dropdown-list-down-arrow' : 'input-dropdown-list-up-arrow'"></i>
     </div>
     <!-- Array of primitives -->
     <div ng-if="isArrayOfPrimitives" class="dropdown-content" ng-hide="model.isHidden">
